@@ -1,5 +1,4 @@
 
-
 function actualizaCacheDinamicos(dynamicCache, req, res){
 
     if(res.ok){

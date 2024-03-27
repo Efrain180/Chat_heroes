@@ -8,7 +8,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
  //   '/',
- 
+
     'index.html',
     'css/style.css',
     'img/favicon.ico',
@@ -66,7 +66,7 @@ self.addEventListener('fetch', e=>{
             return res;
         } else {
             return fetch(e.request).then(newRes=>{
-                return actualizaCacheDinamico(DYNAMIC_CACHE, e.request, newRes);
+                return actualizaCacheDinamicos(DYNAMIC_CACHE, e.request, newRes);
             });//cierre then
             
         }
